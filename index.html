@@ -1,72 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Viajes Chile</title>
     <link rel="icon" type="image/x-icon" href="./assets/img/viajes.svg" />
-    <link rel="stylesheet" href="./assets/css/style.css">
-     <!--BOOTSTRAP JS-->
-     <script
-     defer
-     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-     crossorigin="anonymous"
-   ></script>
-
-   <!-- JQUERY -->
-   <script
-     defer
-     src="https://code.jquery.com/jquery-3.7.1.js"
-     integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-     crossorigin="anonymous"
-   ></script>
-</head>
-<body>
-   <!--Nav Bar-->
-   <nav class="navbar navbar-expand-lg navbar-dark bg-transparent text-white fixed-top">
-    <div class="navbar-container">
-      <img src="./assets/img/viajes.svg" alt="Logo" width="30" height="24" class="d-inline-block"/>Viajes Chile
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"aria-expanded="false"aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!--BOOTSTRAP JS-->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+   
+  </head>
+  <body>
+    <!--Nav Bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent text-white fixed-top">
+      <div class="nav-container container ps-4">
+        <img class="d-inline-block"
+          src="./assets/img/viajes.svg"
+          alt="Logo"
+          width="30"
+          height="24"
+         >Viajes Chile
+        <button class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto me-4  pe-4 ">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link" href="#quienesomos">Quienes Somos</a>
+            <a class="nav-link" href="#destacados">Destacados</a>
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--Carousel-->
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./assets/img/carousel1.jpg"
+            class="d-block w-100 h-50 img-fluid"
+            alt="FotoPaisaje1"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./assets/img/carousel2.jpg"
+            class="d-block w-100 h-50 img-fluid"
+            alt="FotoPaisaje2"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./assets/img/carousel3.jpg"
+            class="d-block w-100 h-50 img-fluid"
+            alt="FotoPaisaje3"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ms-auto">
-          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-          <a class="nav-link" href="#quienesomos">Quienes Somos</a>
-          <a class="nav-link" href="#destacados">Destacados</a>
-          <a class="nav-link" href="#contacto">Contacto</a>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--Quienes somos-->
+    <h1 class="p-4 text-center">¿Quienes Somos?</h1>
+    <hr class="" />
+    <div class="container text-info">
+      <div class="row">
+        <div class="col-12 col-sm-6 text-center mt-4">
+          <img
+            class="container__imagen  d-none d-lg-block"
+            src="./assets/img/quienes-somos.jpg"
+            alt="amigos"
+          />
+        </div>
+        <div class="col-12 col-sm-6 mt-4 p-4">
+          <p class="text-white">
+           En Viajes Chile, somos tu puerta de entrada para descubrir la belleza y diversidad de Chile. Como empresa de turismo de viajes, nos dedicamos a crear experiencias únicas y memorables para todos nuestros clientes, ya sea que estén explorando el desierto de Atacama, las maravillas de la Patagonia o las playas del litoral central.</p>
+          <p class="text-white">
+           Con más de 30 años de experiencia, nuestro equipo de expertos en viajes está comprometido con la excelencia y la atención personalizada. Nos enorgullece ser una empresa chilena que conoce a fondo cada rincón de este hermoso país y que trabaja con pasión para compartir sus maravillas con el mundo.
+          </p>
         </div>
       </div>
     </div>
-  </nav>
-  <!--Carousel-->
-  <div id="carouselExampleIndicators" class="carousel-slide">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./assets/img/carousel1.jpg" class="d-block w-100" alt="foto1">
-      </div>
-      <div class="carousel-item">
-        <img src="./assets/img/carousel2.jpg" class="d-block w-100" alt="foto2">
-      </div>
-      <div class="carousel-item">
-        <img src="./assets/img/carousel3.jpg" class="d-block w-100" alt="foto3">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</body>
+
+    <!--Destacados-->
+    <h1 class="p-4 text-center">Destacados</h1>
+    <hr class="" />
+  </body>
 </html>
