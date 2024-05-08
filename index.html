@@ -13,19 +13,28 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-   
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/d5b48fda4e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+   
     <!--Nav Bar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent text-white fixed-top">
-      <div class="nav-container container ps-4">
-        <img class="d-inline-block"
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-transparent text-white sticky-top"
+    >
+      <div class="container ">
+        <img
+          class="d-inline-block"
           src="./assets/img/viajes.svg"
           alt="Logo"
           width="30"
           height="24"
-         >Viajes Chile
-        <button class="navbar-toggler"
+        />Viajes Chile
+        <button
+          class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"
@@ -36,7 +45,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ms-auto me-4  pe-4 ">
+          <div class="navbar-nav ms-auto">
             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
             <a class="nav-link" href="#quienesomos">Quienes Somos</a>
             <a class="nav-link" href="#destacados">Destacados</a>
@@ -45,13 +54,13 @@
         </div>
       </div>
     </nav>
+
     <!--Carousel-->
     <div
       id="carouselExampleAutoplaying"
-      class="carousel slide"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
+      class="carousel slide rounded"
+      data-bs-ride="carousel">
+      <div class="carousel-inner rounded">
         <div class="carousel-item active">
           <img
             src="./assets/img/carousel1.jpg"
@@ -94,29 +103,270 @@
       </button>
     </div>
     <!--Quienes somos-->
-    <h1 class="p-4 text-center">¿Quienes Somos?</h1>
-    <hr class="" />
+    <h1 class="p-4 text-center fs-2">¿Quienes Somos?</h1>
+    <hr class="hr-bottom d-none d-sm-block" />
     <div class="container text-info">
       <div class="row">
         <div class="col-12 col-sm-6 text-center mt-4">
           <img
-            class="container__imagen  d-none d-lg-block"
+            class="container__imagen d-none d-lg-block rounded"
             src="./assets/img/quienes-somos.jpg"
             alt="amigos"
           />
         </div>
         <div class="col-12 col-sm-6 mt-4 p-4">
           <p class="text-white">
-           En Viajes Chile, somos tu puerta de entrada para descubrir la belleza y diversidad de Chile. Como empresa de turismo de viajes, nos dedicamos a crear experiencias únicas y memorables para todos nuestros clientes, ya sea que estén explorando el desierto de Atacama, las maravillas de la Patagonia o las playas del litoral central.</p>
+            En Viajes Chile, somos tu puerta de entrada para descubrir la
+            belleza y diversidad de Chile. Como empresa de turismo de viajes,
+            nos dedicamos a crear experiencias únicas y memorables para todos
+            nuestros clientes, ya sea que estén explorando el desierto de
+            Atacama, las maravillas de la Patagonia o las playas del litoral
+            central.
+          </p>
           <p class="text-white">
-           Con más de 30 años de experiencia, nuestro equipo de expertos en viajes está comprometido con la excelencia y la atención personalizada. Nos enorgullece ser una empresa chilena que conoce a fondo cada rincón de este hermoso país y que trabaja con pasión para compartir sus maravillas con el mundo.
+            Con más de 30 años de experiencia, nuestro equipo de expertos en
+            viajes está comprometido con la excelencia y la atención
+            personalizada. Nos enorgullece ser una empresa chilena que conoce a
+            fondo cada rincón de este hermoso país y que trabaja con pasión para
+            compartir sus maravillas con el mundo.
           </p>
         </div>
       </div>
     </div>
 
     <!--Destacados-->
-    <h1 class="p-4 text-center">Destacados</h1>
-    <hr class="" />
+    <h1 class="p-4 text-center fs-2">Destacados</h1>
+    <hr class="hr-bottom d-none d-sm-block" />
+
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-12 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img
+                  src="./assets/img/card1.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Region de Los Lagos</h5>
+                  <p class="card-text">
+                    La Región de Los Lagos es una de las regiones más
+                    emblemáticas de Chile, conocida por su riqueza natural,
+                    belleza escénica y diversidad geográfica.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-body-secondary"
+                      >Last updated 3 mins ago</small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img
+                  src="./assets/img/card2.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Desierto de Atacama</h5>
+                  <p class="card-text">
+                    El desierto de Atacama es uno de los lugares más singulares
+                    y extremos del planeta. Ubicado en el norte de Chile, es el
+                    desierto no polar más seco del mundo.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-body-secondary"
+                      >Last updated 3 mins ago</small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img
+                  src="./assets/img/card3.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Norte Grande de Chile</h5>
+                  <p class="card-text">
+                    El Norte Grande es conocido por sus vastos desiertos,
+                    impresionantes paisajes geológicos y rica historia
+                    relacionada con la minería y los pueblos indígenas.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-body-secondary"
+                      >Last updated 3 mins ago</small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img
+                  src="./assets/img/card4.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Bosque Mágico</h5>
+                  <p class="card-text">
+                    Es un tipo de bosque templado lluvioso ubicado en el sur de
+                    Chile y parte de la Argentina. Este ecosistema es uno de los
+                    pocos bosques templados lluviosos que existen en el mundo.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-body-secondary"
+                      >Last updated 3 mins ago</small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Testimonios-->
+    <h1 class="p-4 text-center fs-2">Testimonios</h1>
+    <hr class="hr-bottom d-none d-sm-block" />
+
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-sm-4 text-center">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            quibusdam praesentium totam expedita aliquid maiores quasi
+            architecto perspiciatis, voluptatum aliquam iste suscipit ipsum. Hic
+            consequuntur, molestiae ipsam assumenda corrupti dolorem.
+          </p>
+          <img
+            class="image-testimonio justify-content-center col-sm-12 border border-2 border-light"
+            src="./assets/img/testimonio1.jpg"
+            alt=""
+          />
+          <p class="">Mariela</p>
+        </div>
+        <div class="col-sm-4  text-center">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            quibusdam praesentium totam expedita aliquid maiores quasi
+            architecto perspiciatis, voluptatum aliquam iste suscipit ipsum. Hic
+            consequuntur, molestiae ipsam assumenda corrupti dolorem.
+          </p>
+          <img
+            class="image-testimonio justify-content-center col-sm-12 border border-2 border-light"
+            src="./assets/img/testimonio2.jpg"
+            alt=""
+          />
+          <p class="">Christian</p>
+        </div>
+        <div class="col-sm-4  text-center">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            quibusdam praesentium totam expedita aliquid maiores quasi
+            architecto perspiciatis, voluptatum aliquam iste suscipit ipsum. Hic
+            consequuntur, molestiae ipsam assumenda corrupti dolorem.
+          </p>
+          <img
+            class="image-testimonio bg-info text-white text-center col-sm-12 border border-2 border-light"
+            src="./assets/img/testimonio3.jpg"
+            alt=""
+          />
+          <p class="">Fernanda</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Contacto-->
+    <h1 class="p-4 text-center fs-2">Contacto</h1>
+    <hr class="hr-bottom d-none d-sm-block" />
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <form>
+            <div class="row">
+              <div class="col">
+                Nombre<input
+                  type="text"
+                  class="form-control"
+  
+                  name="nombre"
+                />
+              </div>
+              <div class="col">
+                Apellido<input
+                  type="text"
+                  class="form-control"
+                 
+                  name="apellido"
+                />
+              </div>
+            </div>
+            <div class="col">
+              Email
+              <input
+                type="text"
+                class="form-control mt-2 mb-2"
+              
+                name="email"
+              />
+            </div>
+            Mensaje
+            <textarea
+              class="form-control"
+             
+              rows="3"
+            ></textarea>
+            <div class="form-check p-4">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Acepta terminos y condiciones
+              </label>
+            </div>
+            <button class="btn btn-success mt-2 mb-4" type="submit">
+              Enviar
+            </button>
+          </form>
+        </div>
+        <div class="col-sm-6">
+          <p><i class="fa-solid fa-phone me-2"></i>+56933445566</p>
+          <p><i class="fa-regular fa-envelope me-2"></i>tuemail@gmail.com</p>
+          <p><i class="fa-brands fa-linkedin me-2"></i>Linkedin</p>
+          <p><i class="fa-brands fa-instagram me-2"></i>Instagram</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
