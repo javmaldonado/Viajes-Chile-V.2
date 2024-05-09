@@ -19,4 +19,6 @@ $("#enviar").click(function(){
   });
 
 
-
+  function mostrarAlerta() {
+    alert("¡Has hecho clic en el botón!");
+}
