@@ -1,0 +1,12 @@
+.testimonio-container {
+    display: flex;
+    
+    justify-content: space-between; /* Espacio uniforme entre columnas */
+  }
+  .testimonio-column {
+    flex: 1; /* Cada columna toma una parte igual del espacio */
+    padding: 10px;
+    text-align: center;
+
+  }
+  

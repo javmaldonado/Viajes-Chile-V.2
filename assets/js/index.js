@@ -9,3 +9,5 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
   myModal.addEventListener('shown.bs.modal', () => {
     myInput.focus()
   })
+
+ 

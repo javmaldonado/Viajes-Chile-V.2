@@ -1,3 +1,25 @@
-.carousel-indicators{
-    height: 500px;
+
+
+
+.carousel-caption{
+    height: 300px;
+}
+
+
+/* Estilo para pantallas grandes */
+@media (min-width: 768px) {
+  .carousel-inner {
+    max-height: 500px;
+  }
+
+  
+}
+
+/* Estilo para pantallas pequeñas */
+@media (max-width: 767px) {
+  .carousel-inner {
+    max-height: 300px;
+  }
+
+  
 }
