@@ -1,7 +1,7 @@
-@charset "UTF-8";
+
 @import "../../node_modules/bootstrap/dist/css/bootstrap.css";
-/* MANIFIESTO main.scss */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+/* MANIFIESTO main.scss */
 * {
   padding: 0;
   margin: 0;
