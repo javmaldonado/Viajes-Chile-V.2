@@ -1,7 +1,7 @@
-
+@charset "UTF-8";
 @import "../../node_modules/bootstrap/dist/css/bootstrap.css";
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 /* MANIFIESTO main.scss */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -36,6 +36,11 @@ html {
   border-radius: 100px;
 }
 
+@media (min-width: 576px) {
+  .testimonio-container {
+    flex-direction: column;
+  }
+}
 body {
   font-family: "Raleway", sans-serif;
   color: white;
@@ -47,15 +52,21 @@ body {
 
 .testimonio-container {
   display: flex;
-  justify-content: space-between; /* Espacio uniforme entre columnas */
-}
-
-.testimonio-column {
-  flex: 1; /* Cada columna toma una parte igual del espacio */
-  padding: 10px;
+  flex-direction: row;
   text-align: center;
 }
 
+.testimonio-column {
+  padding: 10px;
+  flex: 50%;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 500px) {
+  .testimonio-container {
+    flex-direction: column;
+  }
+}
 .carousel-caption {
   height: 300px;
 }

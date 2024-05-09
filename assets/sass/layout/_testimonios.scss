@@ -1,12 +1,19 @@
 .testimonio-container {
-    display: flex;
-   
-    justify-content: space-between; /* Espacio uniforme entre columnas */
-  }
-  .testimonio-column {
-    flex: 1; /* Cada columna toma una parte igual del espacio */
-    padding: 10px;
-    text-align: center;
+  display: flex;
+  flex-direction: row;
 
+  text-align: center;
+}
+
+.testimonio-column {
+
+  padding: 10px;
+  flex: 50%;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 500px) {
+  .testimonio-container {
+    flex-direction: column;
   }
-  
+}

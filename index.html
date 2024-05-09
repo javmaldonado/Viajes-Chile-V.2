@@ -45,6 +45,12 @@
       src="https://kit.fontawesome.com/d5b48fda4e.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function mostrarAlerta(event) {
+          event.preventDefault(); // Evitar el envío inmediato del formulario
+          alert("Mensaje enviado correctamente");
+      }
+  </script>
   </head>
   <body>
     <!--Nav Bar-->
@@ -172,7 +178,7 @@
     </div>
     <!--Quienes somos-->
     <h1 class="pt-4 pb-2 text-center fs-2" id="quienesomos">¿Quienes Somos?</h1>
-    <hr class="hr-bottom" />
+    <hr class="hr-bottom border border-white border-2" />
     <div class="container text-info">
       <div class="row">
         <div class="col-12 col-sm-6 text-center mt-4">
@@ -204,7 +210,7 @@
 
     <!--Destacados-->
     <h1 class="pt-4 pb-2 text-center fs-2" id="destacados">Destacados</h1>
-    <hr class="hr-bottom border border-dark border-1" />
+    <hr class="hr-bottom border border-white border-2" />
 
     <div class="container mt-4">
       <div class="row">
@@ -327,46 +333,37 @@
     </div>
     <!--Testimonios-->
     <h1 class="pt-4 pb-2 text-center fs-2" id="testimonios">Testimonios</h1>
-    <hr class="hr-bottom" />
+    <hr class="hr-bottom border border-white border-2" />
 
-    <div class="testimonio-container">
-      <div class="testimonio-column">
+    <div class="testimonio-container text-center">
+      <div class="testimonio-column h-100">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-          quibusdam praesentium totam expedita aliquid maiores quasi architecto
-          perspiciatis, voluptatum aliquam iste suscipit ipsum. Hic
-          consequuntur, molestiae ipsam assumenda corrupti dolorem.
+          ¡Mi experiencia con Viajes Chile fue absolutamente increíble! Desde el momento en que contacté con ellos para planificar mi viaje, el equipo fue atento y muy profesional. No solo me ayudaron a seleccionar los destinos perfectos, sino que también se aseguraron de que cada detalle.
         </p>
         <img
-          class="testimonio-images"
+          class="image-testimonio justify-content-center  border border-2 border-light"
           src="./assets/img/testimonio1.jpg"
           alt=""
         />
         <p class="">Mariela</p>
       </div>
-      <div class="testimonio-column">
+      <div class="testimonio-column h-100">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-          quibusdam praesentium totam expedita aliquid maiores quasi architecto
-          perspiciatis, voluptatum aliquam iste suscipit ipsum. Hic
-          consequuntur, molestiae ipsam assumenda corrupti dolorem.
+          Viajar con Viajes Chile fue una experiencia increíble desde el principio hasta el final. El personal fue extremadamente atento y se encargó de cada detalle para que nuestro viaje fuera perfecto. Nos ayudaron a elegir los destinos, los vuelos y traslados. Fue todo muy genial los recomiendo totalmente.
         </p>
         <img
-          class="testimonio-images"
+          class="image-testimonio justify-content-center border border-2 border-light"
           src="./assets/img/testimonio2.jpg"
           alt=""
         />
         <p class="">Christian</p>
       </div>
-      <div class="testimonio-column">
+      <div class="testimonio-column h-100">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-          quibusdam praesentium totam expedita aliquid maiores quasi architecto
-          perspiciatis, voluptatum aliquam iste suscipit ipsum. Hic
-          consequuntur, molestiae ipsam assumenda corrupti dolorem.
+          Contratar a Viajes Chile fue la mejor decisión para nuestras vacaciones familiares. Nos ayudaron a encontrar el paquete ideal para nuestro presupuesto y planificaron un itinerario completo. El proceso de reserva fue muy sencillo y siempre estuvieron disponibles para responder nuestras preguntas.  
         </p>
         <img
-          class="testimonio-images"
+          class="image-testimonio bg-info text-white text-center col-sm-12 border border-2 border-light"
           src="./assets/img/testimonio3.jpg"
           alt=""
         />
@@ -374,11 +371,11 @@
       </div>
     </div>
     <!--Contacto-->
-    <h1 class="pt-4 pb-2 text-center fs-2" id="contacto">Contacto</h1>
-    <hr class="hr-bottom" />
-
-    <div class="container">
+    
+    <div class="container ">
       <div class="row">
+        <h1 class="pt-4 pb-2 text-center fs-2" id="contacto">Contacto</h1>
+        <hr class="hr-bottom border border-white border-2" />
         <div class="col-sm-6">
           <form>
             <div class="row">
@@ -495,7 +492,7 @@
           </div>
           
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 my-4">
           <p><i class="fa-solid fa-phone me-2"></i>+56933445566</p>
           <p>
             <i class="fa-regular fa-envelope me-2"></i>viajeschile@gmail.com
@@ -504,8 +501,8 @@
           <p><i class="fa-brands fa-instagram me-2"></i>Instagram</p>
         </div>
       </div>
+      <button type="submit" class="btn btn-light text-dark mb-4" onclick="mostrarAlerta(event)">Enviar</button>
     </div>
-
 
 
    

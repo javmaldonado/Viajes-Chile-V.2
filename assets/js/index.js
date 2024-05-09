@@ -14,8 +14,6 @@ myModal.addEventListener("shown.bs.modal", () => {
 
 
 
-$("#enviar").click(function(){
-    alert("El mensaje fue enviado correctamente.");
-  });
+
 
 
