@@ -4,7 +4,7 @@ Ejecutar en la terminal "npm init -y" el adminstrador de paquetes. Con ello se m
 
 Instalar dependencias en este caso es Bootstrap "npm install bootstrap@5.3.3", lo que me genera un package-lock.json y node_modules (la cual debo incluir en "gitignore" para que no se suba a Github)
 
-Integrar Bootstrap, utilizando un @import "@import "../../node_modules/bootstrap/dist/css/bootstrap.css", en el archivo main.scss.
+Integrar Bootstrap, utilizando un @import "@import "../../node_modules/bootstrap/scss/bootstrap.scss", en el archivo main.scss.
 
 Linkear el style.css de la estructura index.html.
 
